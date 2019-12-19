@@ -32,7 +32,7 @@ struct Element: Codable {
     case name = "name"
     case number = "number"
     case id = "id"
-    case favoritedBy = "favorited_by"
+    case favoritedBy// = "favorited_by"
     case source = "source"
     case atomic_mass = "atomic_mass"
 }

@@ -37,7 +37,7 @@ class ElementDetailVCViewController: UIViewController {
         
         
         DispatchQueue.main.async {
-            self.navigationItem.title = "Lab questions - \(element.name)"
+            self.navigationItem.title = "Elememt Name - \(element.name)"
                        }
      //MARK: Labels
         symbolLabel.text = element.symbol
@@ -78,7 +78,7 @@ class ElementDetailVCViewController: UIViewController {
             showAlert(title: "App Error", message: "Issue uploading data")
             return
         }
-        let fave = Element(name: element.name, number: element.number, symbol: element.symbol, source: element.source, atomic_mass: element.atomic_mass, melt: element.melt, boil: element.boil, discoveredBy: element.discoveredBy, id: element.id, favoritedBy: element.favoritedBy)
+        let fave = Element(name: element.name, number: element.number, symbol: element.symbol, source: element.source, atomic_mass: element.atomic_mass, melt: element.melt, boil: element.boil, discoveredBy: element.discoveredBy, id: element.id, favoritedBy: "Margiett X Gil")
         
         
         ElementAPIClient.postFave(favoriteElementPost: fave) { [weak self] (result) in
