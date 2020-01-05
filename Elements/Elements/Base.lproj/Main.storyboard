@@ -201,6 +201,9 @@
                                                 <constraint firstAttribute="bottom" secondItem="6c8-HF-uLb" secondAttribute="bottom" constant="8" id="oWw-tW-qWb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Htx-2F-g5e" kind="show" id="UqC-7O-CQY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -276,4 +279,7 @@
         <image name="circle.fill" catalog="system" width="64" height="60"/>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UqC-7O-CQY"/>
+    </inferredMetricsTieBreakers>
 </document>
